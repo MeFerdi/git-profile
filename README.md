@@ -59,6 +59,7 @@ pip install -r requirements.txt
 Create a .env file and add your GitHub API token:
 ```
 plaintext
+
 GITHUB_TOKEN=your_github_token_here
 
 Start the Flask backend:
