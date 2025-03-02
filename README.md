@@ -40,7 +40,8 @@ GitHub Profile Viewer is a web application that allows users to view GitHub prof
 
 1. **Clone the Repository**:
 ```bash
-git clone https://github.com/your-username/github-profile-viewer.git
+git clone https://github.com/MeFerdi/github-profile-viewer.git
+```
 ```bash
 cd github-profile-viewer
 ```
