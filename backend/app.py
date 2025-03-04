@@ -73,6 +73,7 @@ def fetch_user_contributions(username):
         return response.json()
     else:
         return None
+
 def fetch_readme(username):
     url = f"{GITHUB_API_URL}/repos/{username}/{username}/readme"
     headers = {
@@ -94,14 +95,11 @@ def get_user_data(username):
     readme = fetch_readme(username)
 
     if profile and repos and contributions:
-        print("Profile:", profile)
-        print("Repos:", repos)
-        print("Contributions:", contributions)
         return jsonify({
             "profile": profile,
             "repos": repos,
             "contributions": contributions,
-            # "readme": readme
+            "readme": readme
         })
     else:
         return jsonify({"error": "User not found"}), 404
